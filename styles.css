@@ -148,3 +148,12 @@ input[type="checkbox"] {
 .unread-title{
   margin:0 0 3rem 0rem;
 }
+
+/* Email detail */
+.email-detail-content{
+  margin-top: 3rem;
+}
+
+.email-detail-sub{
+  margin-top: 6rem;
+}
