@@ -32906,7 +32906,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Inbox", ()=>Inbox);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _emailCard = require("../component/EmailCard");
-var _fIlters = require("../component/fIlters");
+var _filters = require("../component/Filters");
 var _mailProvider = require("../context/MailProvider");
 var _s = $RefreshSig$();
 const applyFilters = (state)=>{
@@ -32923,7 +32923,7 @@ const Inbox = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "right-container",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fIlters.Filters), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filters.Filters), {}, void 0, false, {
                 fileName: "pages/Inbox.jsx",
                 lineNumber: 31,
                 columnNumber: 6
@@ -32968,7 +32968,7 @@ $RefreshReg$(_c, "Inbox");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../component/EmailCard":"55efq","../component/fIlters":"cVSim","../context/MailProvider":"2GmUj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"55efq":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../component/EmailCard":"55efq","../context/MailProvider":"2GmUj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../component/Filters":"ln8o8"}],"55efq":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$d052 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -33105,11 +33105,11 @@ $RefreshReg$(_c, "EmailCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../context/MailProvider":"2GmUj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cVSim":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$27d7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","../context/MailProvider":"2GmUj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ln8o8":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$29d7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$27d7.prelude(module);
+$parcel$ReactRefreshHelpers$29d7.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -33129,7 +33129,7 @@ const Filters = ()=>{
                 className: "title",
                 children: "Filters"
             }, void 0, false, {
-                fileName: "component/fIlters.jsx",
+                fileName: "component/Filters.jsx",
                 lineNumber: 9,
                 columnNumber: 7
             }, undefined),
@@ -33144,7 +33144,7 @@ const Filters = ()=>{
                                     payload: e
                                 })
                         }, void 0, false, {
-                            fileName: "component/fIlters.jsx",
+                            fileName: "component/Filters.jsx",
                             lineNumber: 13,
                             columnNumber: 11
                         }, undefined),
@@ -33153,13 +33153,13 @@ const Filters = ()=>{
                         " mails"
                     ]
                 }, index, true, {
-                    fileName: "component/fIlters.jsx",
+                    fileName: "component/Filters.jsx",
                     lineNumber: 12,
                     columnNumber: 9
                 }, undefined))
         ]
     }, void 0, true, {
-        fileName: "component/fIlters.jsx",
+        fileName: "component/Filters.jsx",
         lineNumber: 8,
         columnNumber: 5
     }, undefined);
@@ -33173,7 +33173,7 @@ _c = Filters;
 var _c;
 $RefreshReg$(_c, "Filters");
 
-  $parcel$ReactRefreshHelpers$27d7.postlude(module);
+  $parcel$ReactRefreshHelpers$29d7.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
@@ -33190,7 +33190,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Spam", ()=>Spam);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _emailCard = require("../component/EmailCard");
-var _fIlters = require("../component/fIlters");
+var _filters = require("../component/Filters");
 var _mailProvider = require("../context/MailProvider");
 var _s = $RefreshSig$();
 const applyFilters = (state)=>{
@@ -33207,7 +33207,7 @@ const Spam = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "right-container",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fIlters.Filters), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filters.Filters), {}, void 0, false, {
                 fileName: "pages/Spam.jsx",
                 lineNumber: 31,
                 columnNumber: 5
@@ -33253,7 +33253,7 @@ $RefreshReg$(_c, "Spam");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../component/EmailCard":"55efq","../component/fIlters":"cVSim","../context/MailProvider":"2GmUj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"caxxI":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../component/EmailCard":"55efq","../context/MailProvider":"2GmUj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../component/Filters":"ln8o8"}],"caxxI":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$7280 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -33265,7 +33265,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Trash", ()=>Trash);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _emailCard = require("../component/EmailCard");
-var _fIlters = require("../component/fIlters");
+var _filters = require("../component/Filters");
 var _mailProvider = require("../context/MailProvider");
 var _s = $RefreshSig$();
 const applyFilters = (state)=>{
@@ -33282,7 +33282,7 @@ const Trash = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "right-container",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _fIlters.Filters), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filters.Filters), {}, void 0, false, {
                 fileName: "pages/Trash.jsx",
                 lineNumber: 30,
                 columnNumber: 7
@@ -33328,7 +33328,7 @@ $RefreshReg$(_c, "Trash");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../component/EmailCard":"55efq","../component/fIlters":"cVSim","../context/MailProvider":"2GmUj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hD3Ij":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../component/EmailCard":"55efq","../context/MailProvider":"2GmUj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../component/Filters":"ln8o8"}],"hD3Ij":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$4463 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
