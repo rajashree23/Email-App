@@ -1,0 +1,150 @@
+/* Reset styling */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Heading */
+
+.main-heading {
+  text-align: center;
+  margin: 1rem 0rem;
+}
+
+/* Headers */
+nav {
+  position: fixed;
+  top: 80px;
+  bottom: 0;
+}
+
+nav .link {
+  text-decoration: none;
+  color: black;
+  margin: 3rem 1rem;
+  font-size: 1.25rem;
+  display: block;
+  padding: 1rem;
+}
+
+nav .link.active {
+  color: red;
+  border-right: 5px solid #000;
+  font-weight: 700;
+}
+
+.material-symbols-outlined {
+  position: relative;
+  top: 5px;
+  left: -8px;
+  font-size: 1.25rem;
+}
+
+.right-container {
+  position: relative;
+  left: 250px;
+  width: 78vw;
+}
+
+/* Email Card */
+
+.email-card {
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px #0003;
+}
+
+button {
+  font-family: sans-serif;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  padding: 0.5rem;
+  /* margin: 1rem; */
+  font-size: 1rem;
+}
+
+.email-card h2 {
+  display: inline-block;
+}
+
+.email-card .star{
+float: right;
+}
+
+
+.email-card p {
+  margin: 1rem 0rem 1rem 0rem;
+  font-size: 1rem;
+}
+
+.email-card .action-container {margin: 0.5rem 0rem 1rem 0rem;}
+.email-card .action-container button {
+ margin: 1rem;
+}
+
+.button-container {
+
+float: right;
+    margin: -1.5rem 0rem;
+}
+
+.email-card.unread {
+  background-color: #f3f7fc;
+}
+
+.email-card .delete {
+  color: #F45446;
+
+}
+
+.email-card .view-details {
+  text-decoration: none;
+  color: #2D2F30
+}
+
+.email-card .read-unread {
+  color: #FFA31B
+}
+
+.email-card .spam {
+  color: #8ACB8C;
+}
+
+/* Filters */
+.filters-container {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  margin: 4rem 0rem 1rem;
+}
+
+.filters-container .title {
+  position: absolute;
+  top: -10px;
+  background-color: white;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  margin: 0 0.25rem 0;
+}
+
+
+
+/* Inbox */
+.unread-title{
+  margin:0 0 3rem 0rem;
+}
