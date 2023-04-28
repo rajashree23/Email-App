@@ -1,5 +1,5 @@
 import { EmailCard } from "../component/EmailCard";
-import { Filters } from "../component/fIlters";
+import { Filters } from "../component/Filters";
 import { useMailProviderContext } from "../context/MailProvider";
 
 const applyFilters = (state) => {
