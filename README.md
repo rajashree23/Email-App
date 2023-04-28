@@ -6,6 +6,7 @@ Email web app created using **React, useContext and useReducer!**
 - npm start
 
 # Live project
+https://welcome-email-app.netlify.app/
 
 
 ### Things I learnt
