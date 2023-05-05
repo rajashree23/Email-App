@@ -27,9 +27,9 @@ export const Inbox = () => {
   );
 
   return (
-    <div className="right-container">
+    <div className="email-container">
      <Filters/>
-      <h2 className="unread-title">Unread: {unreadEmails} </h2>
+      <h2 className="unread-title">Total Unread: {unreadEmails} </h2>
       {filteredEmails.map((email) => (
         <EmailCard key={email.mId} email={email} />
       ))}

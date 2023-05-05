@@ -7,7 +7,7 @@ export const EmailDetails = () => {
 
   const email = state.emails.find((email) => email.mId === emailId);
   return (
-    <div className="right-container">
+    <div className="email-container">
       <h2 className="email-detail-sub">Subject: {email.subject}</h2>
       <p className="email-detail-content">{email.content}</p>
     </div>

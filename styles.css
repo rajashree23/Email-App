@@ -1,5 +1,4 @@
 /* Reset styling */
-
 *,
 *::before,
 *::after {
@@ -9,11 +8,15 @@
   padding: 0;
 }
 
-body{
+body {
   width: 100vw;
 }
-/* Heading */
 
+.main-container {
+  display: flex;
+}
+
+/* Heading */
 .main-heading {
   text-align: center;
   margin: 1rem 0rem;
@@ -21,9 +24,10 @@ body{
 
 /* Headers */
 nav {
-  position: fixed;
-  top: 80px;
-  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-basis: 20%;
 }
 
 nav .link {
@@ -31,8 +35,8 @@ nav .link {
   color: black;
   margin: 3rem 1rem;
   font-size: 1.25rem;
-  display: block;
   padding: 1rem;
+  width:9rem;
 }
 
 nav .link.active {
@@ -48,10 +52,10 @@ nav .link.active {
   font-size: 1.25rem;
 }
 
-.right-container {
-  position: relative;
-  left: 250px;
-  width: 78vw;
+.email-container {
+  flex-shrink: 1;
+  flex-basis: 80%;
+  padding: 0 2rem;
 }
 
 /* Email Card */
@@ -63,6 +67,9 @@ nav .link.active {
   padding: 1rem;
   font-size: 1rem;
   box-shadow: 0 4px 8px #0003;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 button {
@@ -70,34 +77,27 @@ button {
   cursor: pointer;
   background-color: white;
   border: none;
-  padding: 0.5rem;
-  /* margin: 1rem; */
+  padding: 0.5rem 1rem;
   font-size: 1rem;
 }
 
-.email-card h2 {
-  display: inline-block;
+.sub-star-container {
+  display: flex;
+  justify-content: space-between;
 }
-
-.email-card .star{
-float: right;
-}
-
 
 .email-card p {
   margin: 1rem 0rem 1rem 0rem;
   font-size: 1rem;
 }
 
-.email-card .action-container {margin: 0.5rem 0rem 1rem 0rem;}
-.email-card .action-container button {
- margin: 1rem;
+.email-card .action-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.button-container {
-
-float: right;
-    margin: -1.5rem 0rem;
+.email-card .action-container button:nth-child(2) {
+  margin: 0rem 1rem;
 }
 
 .email-card.unread {
@@ -105,35 +105,29 @@ float: right;
 }
 
 .email-card .delete {
-  color: #F45446;
-
+  color: #f45446;
 }
 
 .email-card .view-details {
   text-decoration: none;
-  color: #2D2F30
+  color: #2d2f30;
 }
 
 .email-card .read-unread {
-  color: #FFA31B
+  color: #ffa31b;
 }
 
 .email-card .spam {
-  color: #8ACB8C;
+  color: #8acb8c;
 }
 
 /* Filters */
 .filters-container {
-  border: 1px solid #000;
-  border-radius: 5px;
-  padding: 1rem 1rem;
   margin: 4rem 0rem 1rem;
 }
 
-.filters-container .title {
-  position: absolute;
-  top: -10px;
-  background-color: white;
+.filters-container fieldset {
+  padding: 1rem;
 }
 
 input[type="checkbox"] {
@@ -144,18 +138,16 @@ input[type="checkbox"] {
   margin: 0 0.25rem 0;
 }
 
-
-
 /* Inbox */
-.unread-title{
-  margin:0 0 3rem 0rem;
+.unread-title {
+  margin: 0 0 3rem;
 }
 
 /* Email detail */
-.email-detail-content{
+.email-detail-content {
   margin-top: 3rem;
 }
 
-.email-detail-sub{
+.email-detail-sub {
   margin-top: 6rem;
 }

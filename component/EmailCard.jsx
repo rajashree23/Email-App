@@ -6,15 +6,18 @@ export const EmailCard = ({ email, trash, spam }) => {
   const { dispatch } = useMailProviderContext();
   return (
     <div className={`email-card ${email.unread ? "unread" : ""}`}>
-      <h2>Subject: {email.subject}</h2>
-      <button
-        onClick={() =>
-          dispatch({ type: "TOGGLE_STAR_UNSTAR", payload: email.mId })
-        }
-        className="star"
-      >
-        {email.isStarred ? "Unstar" : "Star"}
-      </button>
+      <div className="sub-star-container">
+        <h2>Subject: {email.subject}</h2>
+        <button
+          onClick={() =>
+            dispatch({ type: "TOGGLE_STAR_UNSTAR", payload: email.mId })
+          }
+          className="star"
+        >
+          {email.isStarred ? "Unstar" : "Star"}
+        </button>
+      </div>
+      
       <p>{email.content}</p>
 
       <div className="action-container">
@@ -34,7 +37,6 @@ export const EmailCard = ({ email, trash, spam }) => {
               dispatch({ type: "TOGGLE_DELETE", payload: email.mId })
             }
           >
-        
             {trash ? "Move to Inbox" : "Delete"}
           </button>
 
