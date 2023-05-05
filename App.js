@@ -11,13 +11,15 @@ export default function App() {
     <div>
       <Heading />
 
-      <Headers />
-      <Routes>
-        <Route path="/" element={<Inbox />} />
-        <Route path="/trash" element={<Trash />} />
-        <Route path="/spam" element={<Spam />} />
-        <Route path="/email/:emailId" element={<EmailDetails />} />
-      </Routes>
+      <div className="main-container">
+        <Headers />
+        <Routes>
+          <Route path="/" element={<Inbox />} />
+          <Route path="/trash" element={<Trash />} />
+          <Route path="/spam" element={<Spam />} />
+          <Route path="/email/:emailId" element={<EmailDetails />} />
+        </Routes>
+      </div>
     </div>
   );
 }

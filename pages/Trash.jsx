@@ -26,7 +26,7 @@ export const Trash = () => {
     0
   );
   return (
-    <div className="right-container">
+    <div className="email-container">
       <Filters />
       <h2 className="unread-title">Trash Unread: {unreadEmails} </h2>
       {filteredEmails.map((email) => (

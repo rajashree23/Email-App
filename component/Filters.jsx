@@ -6,19 +6,22 @@ export const Filters = () => {
 
   return (
     <div className="filters-container">
-      <p className="title">Filters</p>
-
-      {CHECKBOX.map((option, index) => (
-        <label key={index}>
-          <input
-            type="checkbox"
-            value={option.key}
-            checked={state.selectedFilters.selectedCheckbox.includes(option.key)}
-            onChange={(e) => dispatch({ type: "HANDLE_FILTERS", payload: e })}
-          />
-          Show {option.value} mails
-        </label>
-      ))}
+      <fieldset>
+        <legend>Filters</legend>
+        {CHECKBOX.map((option, index) => (
+          <label key={index}>
+            <input
+              type="checkbox"
+              value={option.key}
+              checked={state.selectedFilters.selectedCheckbox.includes(
+                option.key
+              )}
+              onChange={(e) => dispatch({ type: "HANDLE_FILTERS", payload: e })}
+            />
+            Show {option.value} mails
+          </label>
+        ))}
+      </fieldset>
     </div>
   );
 };

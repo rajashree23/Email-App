@@ -27,7 +27,7 @@ export const Spam = () => {
   );
 
   return (
-    <div className="right-container">
+    <div className="email-container">
     <Filters/>
     <h2 className="unread-title">Spam Unread: {unreadEmails} </h2>
       {filteredEmails.map((email) => (
