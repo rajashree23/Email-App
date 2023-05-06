@@ -18,7 +18,7 @@ const applyFilters = (state) => {
   return filteredEmails;
 };
 const toasterDispatch = (state) =>
-  state.toaster.actionPerformed === "Delete"
+  state.toaster.actionPerformed === "Trash"
     ? {
         type: "TOGGLE_DELETE",
         payload: state.toaster.emailId,
