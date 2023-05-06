@@ -10,6 +10,7 @@
 
 body {
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .main-container {
@@ -150,4 +151,25 @@ input[type="checkbox"] {
 
 .email-detail-sub {
   margin-top: 6rem;
+}
+
+/* Toaster */
+
+.toaster-container{
+  position:fixed;
+  left:0;
+  bottom: 0;
+  box-shadow: 0 3px 8px #9ca3af;
+  font-size: 1rem;
+  margin:1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 10;
+}
+.toaster-container p{
+  display: inline;
+}
+.toaster-container button{
+  color:#f45446
 }

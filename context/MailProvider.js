@@ -9,6 +9,11 @@ const MailContext = React.createContext();
 export const MailContextProvider = ({ children }) => {
   const [state, dispatch] = React.useReducer(mailReducer, {
     emails: mails,
+    toaster: {
+      showToaster: false,
+      actionPerformed: null,
+      emailId:null
+    },
     selectedFilters: {
       selectedCheckbox: [],
     },
