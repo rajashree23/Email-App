@@ -17,29 +17,28 @@ const applyFilters = (state) => {
 
   return filteredEmails;
 };
+const toasterDispatch = (state) =>
+  state.toaster.actionPerformed === "Delete"
+    ? {
+        type: "TOGGLE_DELETE",
+        payload: state.toaster.emailId,
+      }
+    : {
+        type: "TOGGLE_SPAM",
+        payload: state.toaster.emailId,
+      };
 
 export const Inbox = () => {
   const { state } = useMailProviderContext();
 
   const filteredEmails = applyFilters(state);
+  const toasterDispatchObj = toasterDispatch(state);
 
   const unreadEmails = filteredEmails.reduce(
     (totalUnread, currEmail) =>
       currEmail.unread ? ++totalUnread : totalUnread,
     0
   );
-
-  const toasterDispatch = 
-   state.toaster.actionPerformed === "Trash"
-      ? {
-          type: "TOGGLE_DELETE",
-          payload: state.toaster.emailId,
-        }
-      : {
-          type: "TOGGLE_SPAM",
-          payload: state.toaster.emailId,
-        };
-
 
   return (
     <div className="email-container">
@@ -49,10 +48,7 @@ export const Inbox = () => {
         <EmailCard key={email.mId} email={email} />
       ))}
 
-
-      {state.toaster.showToaster && <Toaster {...toasterDispatch}/>}
-
-
+      {state.toaster.showToaster && <Toaster {...toasterDispatchObj} />}
     </div>
   );
 };

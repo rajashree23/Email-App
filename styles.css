@@ -97,6 +97,16 @@ button {
   justify-content: space-between;
 }
 
+@media(max-width:768px){
+  .email-card .action-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .email-card .view-details{
+    margin:1rem;
+  }
+}
+
 .email-card .action-container button:nth-child(2) {
   margin: 0rem 1rem;
 }
