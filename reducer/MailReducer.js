@@ -1,5 +1,4 @@
 export const mailReducer = (state, action) => {
-  console.log(action)
   switch (action.type) {
     case "TOGGLE_READ_UNREAD":
       return {

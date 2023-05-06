@@ -1,6 +1,6 @@
 import { useMailProviderContext } from "../context/MailProvider";
 
-export const Toaster = (toasterDispatch) => {
+export const Toaster = (toasterDispatchObj) => {
   const { state, dispatch } = useMailProviderContext();
 
   return (
@@ -8,7 +8,7 @@ export const Toaster = (toasterDispatch) => {
       <p>Conversation moved to {state.toaster.actionPerformed}</p>
       <button
         onClick={() => {
-          dispatch(toasterDispatch);
+          dispatch(toasterDispatchObj);
           dispatch({ type: "SET_TOASTER", payload: { showToaster: false } });
         }}
       >
