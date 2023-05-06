@@ -17,7 +17,7 @@ export const EmailCard = ({ email, trash, spam }) => {
           {email.isStarred ? "Unstar" : "Star"}
         </button>
       </div>
-      
+
       <p>{email.content}</p>
 
       <div className="action-container">
@@ -33,9 +33,23 @@ export const EmailCard = ({ email, trash, spam }) => {
         <div className="button-container">
           <button
             className="delete"
-            onClick={() =>
-              dispatch({ type: "TOGGLE_DELETE", payload: email.mId })
-            }
+            onClick={() => {
+              dispatch({
+                type: "SET_TOASTER",
+                payload: {
+                  showToaster: true,
+                  actionPerformed: "Trash",
+                  emailId: email.mId,
+                },
+              });
+              dispatch({ type: "TOGGLE_DELETE", payload: email.mId });
+              setTimeout(() => {
+                dispatch({
+                  type: "SET_TOASTER",
+                  payload: { showToaster: null },
+                });
+              }, 5000);
+            }}
           >
             {trash ? "Move to Inbox" : "Delete"}
           </button>
@@ -50,9 +64,24 @@ export const EmailCard = ({ email, trash, spam }) => {
           </button>
           <button
             className="spam"
-            onClick={() =>
-              dispatch({ type: "TOGGLE_SPAM", payload: email.mId })
-            }
+            onClick={() => {
+              dispatch({
+                type: "SET_TOASTER",
+                payload: {
+                  showToaster: true,
+                  actionPerformed: "Spam",
+                  emailId: email.mId,
+                },
+              });
+
+              dispatch({ type: "TOGGLE_SPAM", payload: email.mId });
+              setTimeout(() => {
+                dispatch({
+                  type: "SET_TOASTER",
+                  payload: { showToaster: null },
+                });
+              }, 5000);
+            }}
           >
             {spam ? "Move to Inbox" : " Report spam"}
           </button>
