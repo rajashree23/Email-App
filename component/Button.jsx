@@ -23,7 +23,7 @@ const createDispatch = (type, payload) => {
         type: "SET_TOASTER",
         payload: {
           showToaster: true,
-          actionPerformed: "Delete",
+          actionPerformed: "Trash",
           emailId: payload,
         },
       },
